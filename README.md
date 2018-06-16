@@ -30,7 +30,7 @@ The terminal lists the estimate parameters for all detected lines.
 ![Console Output](/consoleOutput.PNG)
 
 ### Peaks in the Hough Space
-The tiny and whitest dots represents the regions of the Hough Space, which is essentially the visual representation of the accumulator array.
+The tiny and whitest dots represent the peaks of the Hough Space, which is essentially the visual representation of the accumulator array.
 
 ![Hough Space](/houghSpace.PNG)
 
