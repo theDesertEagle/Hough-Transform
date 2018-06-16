@@ -22,12 +22,16 @@ The following steps were used to detect
 ![Input Image](/line.gif)
 
 ### Lines Detected by Hough Transform
+The blue-lines highlight the detected-lines which are plotted using their estimated parameters. 
 ![Sample Output](/sampleOutput.PNG)
 
 ### Parameters for Detected Lines
+The terminal lists the estimate parameters for all detected lines.
 ![Console Output](/consoleOutput.PNG)
 
 ### Peaks in the Hough Space
+The tiny and whitest dots represents the regions of the Hough Space, which is essentially the visual representation of the accumulator array.
+
 ![Hough Space](/houghSpace.PNG)
 
 ## Limitations
