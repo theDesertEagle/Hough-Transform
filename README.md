@@ -12,12 +12,23 @@ It is to be noted that a standard slope-intercept equation form, y = m.x + b (wh
 
 The following steps were used to detect 
 1. The Hough Space is defined as  an accumulator 2D-array which records the counts of the achieved votes for all given pairs of parameters (r, &theta;), and whose size is determined by the resolution of the parameters. For this application, the resolution for 'r' is 1 unit and '&theta;' is 1&deg;. 
-2. Line-thinning is performed on the image to get the foundation-structure (edge-elements) for all present image objects.
+2. Thresholding and Line-thinning is performed on the image to get the foundation-structure (edge-elements) for all present image objects.
 3. For each edge-element, 1 vote is incremented in the accumulator for all possible-lines in the image, based on the pair of their respective parameters 'r' and '&theta;'.
 4. All peaks in the Hough Space are extracted from the image, the line-parameters of which are displayed on the terminal.
 5. The line-parameters are used to draw the detected lines by the algorithm.
 
+## Observations
+### Binarized Input Image
+![Input Image](/line.gif)
+
+### Lines Detected by Hough Transform
 ![Sample Output](/sampleOutput.PNG)
+
+### Parameters for Detected Lines
+![Console Output](/consoleOutput.PNG)
+
+### Peaks in the Hough Space
+![Hough Space](/houghSpace.PNG)
 
 ## Limitations
 1. The preprocessing of input-images may be crucial for detecting the required set of lines accurately.
